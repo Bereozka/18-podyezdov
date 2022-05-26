@@ -21,5 +21,5 @@ from django.urls import path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('accounts/', LoginView.as_view()),
+    path('accounts/login/', LoginView.as_view()),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
