@@ -73,3 +73,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 https://github.com/artalar/blog/blob/master/src/pages/react-component-structure.md
 
+https://github.com/artalar/react-template
