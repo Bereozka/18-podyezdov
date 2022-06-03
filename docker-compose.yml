@@ -1,0 +1,47 @@
+version: '3'
+
+services:
+
+  postgres:
+    image: postgres:10
+    env_file:
+      - ./config/postgres/database_env
+    networks:
+      - postgres_network
+    volumes:
+      - ./data/portgres:/var/lib/postgresql/data
+    ports:
+      - '5432'
+
+  djangoapp:
+    build: ./backend
+    volumes:
+      - ./backend/staticfiles:/opt/services/djangoapp/static
+      - ./backend/media:/opt/services/djangoapp/media
+    networks:
+      - nginx_network
+      - postgres_network
+    depends_on:
+      - postgres
+
+  nginx:
+    image: pagespeed/nginx-pagespeed:latest
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - ./config/nginx/conf.d:/etc/nginx/conf.d
+      - ./config/ssl:/etc/letsencrypt
+      - ./backend/staticfiles:/opt/services/djangoapp/static
+      - ./frontend/build/static:/opt/services/frontend/static
+      - ./backend/media:/opt/services/djangoapp/media
+    depends_on:
+      - djangoapp
+    networks:
+      - nginx_network
+
+networks:
+  nginx_network:
+    driver: bridge
+  postgres_network:
+    driver: bridge
