@@ -5,18 +5,24 @@ import { Row } from "../../../../interfaces/table";
 interface DataProps {
   index: number,
   data: Row;
-  updateData: (id: number, newObj: Row) => void;
+  updateRow: (id: number, newObj: Row) => void;
+  deleteRow: (id: number) => void;
 };
 
 export const FilledRow = React.memo(({
   index,
   data,
-  updateData,
+  updateRow,
+  deleteRow
 }: DataProps) => {
 
   const onChangeHandler = (e: React.ChangeEvent<HTMLInputElement>): void => {
     data[e.target.id] = e.target.value;
-    updateData(data["id"], data);
+    updateRow(data["id"], data);
+  };
+
+  const onClickHandler = (): void => {
+    deleteRow(data["id"]);
   };
 
   return (
@@ -78,6 +84,7 @@ export const FilledRow = React.memo(({
         <button
           className="btn btn-danger"
           type="button"
+          onClick={onClickHandler}
         >Удалить</button>
       </td>
     </tr>
