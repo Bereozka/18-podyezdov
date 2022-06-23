@@ -16,26 +16,31 @@ export const Tbody = React.memo(({
   setData,
 }: DataProps) => {
 
-  const [workData, setWorkData] = React.useState<Array<TableRow>>([]);
-  const [totalPrice, setTotalPrice] = React.useState();
+  const [totalPrice, setTotalPrice] = React.useState(0);
 
   const calculateTotalPrice = () => {
-    data.map(item => {
+    let total = 0;
+    data.forEach(item => {
       if (item.type !== "filled") {
         return
       };
       let count = Number(item.data.count);
       let price = Number(item.data.price);
       let percent = Number(item.data.percent) / 100;
-      item.data.total = String(count * price * percent);
-      return item
+      total += count * price * percent
     });
+    // setTotalPrice(() => total);
+    // console.log(totalPrice);
   };
 
   const updateRow = (id: number, newObj: Row): void => {
     setData(prevState => {
       const newState = prevState.map(obj => {
         if (obj.data.id === id) {
+          let count = Number(newObj.count);
+          let price = Number(newObj.price);
+          let percent = Number(newObj .percent) / 100;
+          obj.data.total = String(count * price * percent)
           obj.data = newObj
         };
         return obj
@@ -73,7 +78,9 @@ export const Tbody = React.memo(({
           deleteRow={deleteRow}
         />
       })}
-      <TotalRow />
+      <TotalRow
+        totalPrice={totalPrice}
+      />
       <NewRow />
     </tbody>
   )

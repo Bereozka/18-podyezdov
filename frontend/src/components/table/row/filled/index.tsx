@@ -72,13 +72,7 @@ export const FilledRow = React.memo(({
         />
       </td>
       <td>
-        <input
-          className="table__input"
-          id="total"
-          value={data.total}
-          type="number"
-          onChange={onChangeHandler}
-        />
+        <p>{data.total}</p>
       </td>
       <td>
         <button
