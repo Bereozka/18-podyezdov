@@ -1,0 +1,14 @@
+.suggestions {
+  position: relative;
+  display: block;
+}
+
+.suggestions ul li {
+  display: block;
+  height: 20px;
+  border: 1px solid black;
+}
+
+.active {
+  background: green;
+}

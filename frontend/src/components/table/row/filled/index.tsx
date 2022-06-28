@@ -1,6 +1,7 @@
 import * as React from "react";
 
 import { Row } from "../../../../interfaces/table";
+import { FilledInput } from "../../input/filled";
 
 interface DataProps {
   index: number,
@@ -16,11 +17,6 @@ export const FilledRow = React.memo(({
   deleteRow
 }: DataProps) => {
 
-  const onChangeHandler = (e: React.ChangeEvent<HTMLInputElement>): void => {
-    data[e.target.id] = e.target.value;
-    updateRow(data["id"], data);
-  };
-
   const onClickHandler = (): void => {
     deleteRow(data["id"]);
   };
@@ -29,51 +25,46 @@ export const FilledRow = React.memo(({
     <tr>
       <th scope="row">{index}</th>
       <td>
-        <input
-          className="table__input"
-          id="name"
+        <FilledInput
+          title="name"
           value={data.name}
-          onChange={onChangeHandler}
+          data={data}
+          updateRow={updateRow}
         />
       </td>
       <td> 
-        <input
-          className="table__input"
-          id="units"
+        <FilledInput
+          title="units"
           value={data.units}
-          onChange={onChangeHandler}
+          data={data}
+          updateRow={updateRow}
         />
       </td>
       <td>
-        <input
-          className="table__input"
-          id="count"
+        <FilledInput
+          title="count"
           value={data.count}
-          type="number"
-          onChange={onChangeHandler}
+          data={data}
+          updateRow={updateRow}
         />
       </td>
       <td>
-        <input
-          className="table__input"
-          id="price"
+        <FilledInput
+          title="price"
           value={data.price}
-          type="number"
-          onChange={onChangeHandler}
+          data={data}
+          updateRow={updateRow}
         />
       </td>
       <td>
-        <input
-          className="table__input"
-          id="percent"
+        <FilledInput
+          title="percent"
           value={data.percent}
-          type="number"
-          onChange={onChangeHandler}
+          data={data}
+          updateRow={updateRow}
         />
       </td>
-      <td>
-        <p>{data.total}</p>
-      </td>
+      <td>{data.total}</td>
       <td>
         <button
           className="btn btn-danger"

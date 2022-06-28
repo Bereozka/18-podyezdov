@@ -18,6 +18,10 @@ export const Tbody = React.memo(({
 
   const [totalPrice, setTotalPrice] = React.useState(0);
 
+  React.useEffect(() => {
+    calculateTotalPrice();
+  });
+
   const calculateTotalPrice = () => {
     let total = 0;
     data.forEach(item => {
@@ -29,8 +33,7 @@ export const Tbody = React.memo(({
       let percent = Number(item.data.percent) / 100;
       total += count * price * percent
     });
-    // setTotalPrice(() => total);
-    // console.log(totalPrice);
+    setTotalPrice(() => total);
   };
 
   const updateRow = (id: number, newObj: Row): void => {
@@ -39,7 +42,7 @@ export const Tbody = React.memo(({
         if (obj.data.id === id) {
           let count = Number(newObj.count);
           let price = Number(newObj.price);
-          let percent = Number(newObj .percent) / 100;
+          let percent = Number(newObj.percent) / 100;
           obj.data.total = String(count * price * percent)
           obj.data = newObj
         };
@@ -81,7 +84,10 @@ export const Tbody = React.memo(({
       <TotalRow
         totalPrice={totalPrice}
       />
-      <NewRow />
+      <NewRow
+        data={data}
+        setData={setData}
+      />
     </tbody>
   )
 });

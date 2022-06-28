@@ -1,0 +1,1 @@
+[{"model": "api.materialmodel", "pk": 1, "fields": {"title": "Material", "units": "e.g.", "price": 123.0, "link": "https://vk.com"}}]

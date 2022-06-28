@@ -1,0 +1,1 @@
+[{"model": "api.workmodel", "pk": 1, "fields": {"title": "Work", "units": "hours", "price": 23134.0, "price_staff": 23000.0}}]

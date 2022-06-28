@@ -1,10 +1,11 @@
 import * as React from "react";
 
 import { Row } from "../../../../interfaces/table";
+import { FilledInput } from "../../input/filled";
 
 interface DataProps {
-  index: number,
-  data: Row,
+  index: number;
+  data: Row;
   updateRow: (id: number, newObj: Row) => void;
   deleteRow: (id: number) => void;
 };
@@ -13,13 +14,8 @@ export const SubtitleRow = React.memo(({
   index,
   data,
   updateRow,
-  deleteRow
+  deleteRow,
 }: DataProps) => {
-
-  const onChangeHandler = (e: React.ChangeEvent<HTMLInputElement>): void => {
-    data[e.target.id] = e.target.value;
-    updateRow(data["id"], data);
-  };
 
   const onClickHandler = (): void => {
     deleteRow(data["id"]);
@@ -30,11 +26,11 @@ export const SubtitleRow = React.memo(({
       <th></th>
       <td></td>
       <td>
-        <input
-          id="title"
-          className="table__input"
+        <FilledInput
+          title="title"
           value={data.title}
-          onChange={onChangeHandler}
+          data={data}
+          updateRow={updateRow}
         />
       </td>
       <td></td>
