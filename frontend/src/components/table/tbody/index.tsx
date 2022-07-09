@@ -4,16 +4,19 @@ import { Dispatch, SetStateAction } from "react";
 import { FilledRow, SubtitleRow, NewRow, TotalRow } from "../row";
 
 import { TableRow, Row } from "../../../interfaces/table";
+import { WorkModel } from "../../../interfaces/services/api";
 
 
 interface DataProps {
   data: Array<TableRow>;
   setData?: Dispatch<SetStateAction<Array<TableRow>>>;
+  autocompleteList: Array<WorkModel>;
 }
 
 export const Tbody = React.memo(({
   data,
   setData,
+  autocompleteList,
 }: DataProps) => {
 
   const [totalPrice, setTotalPrice] = React.useState(0);
@@ -87,6 +90,7 @@ export const Tbody = React.memo(({
       <NewRow
         data={data}
         setData={setData}
+        autocompleteList={autocompleteList}
       />
     </tbody>
   )

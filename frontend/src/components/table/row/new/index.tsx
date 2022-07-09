@@ -2,43 +2,25 @@ import * as React from "react";
 import { Dispatch, SetStateAction } from "react";
 
 import { AutocompleteInput } from "../../input/autocomplete";
-import { getListWorks } from "../../../../services/api/work";
 import { WorkModel } from "../../../../interfaces/services/api";
-import { TableRow, Row } from "../../../../interfaces/table";
+import { TableRow } from "../../../../interfaces/table";
 
 interface DataProps {
   data: Array<TableRow>;
   setData?: Dispatch<SetStateAction<Array<TableRow>>>;
-};
-
-interface ResponseData {
-  data: Array<WorkModel>;
+  autocompleteList: Array<WorkModel>;
 };
 
 export const NewRow = React.memo(({
+  autocompleteList,
   data,
   setData,
 }: DataProps) => {
-
-  const [items, setItems] = React.useState<Array<WorkModel>>([]);
+  
   const [result, setResult] = React.useState("");
 
-  React.useEffect(() => {
-    getListWorks()
-      .then((
-        data,
-      ): void => {
-        if (!data) {
-          return
-        };
-        setItems(() => {
-          return [].concat(data)
-        });
-      });
-  }, []);
-
   const onClickHandler = (event: React.MouseEvent) => {
-    items.forEach(item => {
+    autocompleteList.forEach(item => {
       if (item.title !== result) {
         return
       }
@@ -76,7 +58,7 @@ export const NewRow = React.memo(({
       <th scope="row">#</th>
       <td>
         <AutocompleteInput
-          items={items.map((item: WorkModel) => item.title)}
+          items={autocompleteList.map((item: WorkModel) => item.title)}
           result={result}
           setResult={setResult}
         />
