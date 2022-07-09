@@ -37,18 +37,28 @@ export const NewRow = React.memo(({
       };
 
       let newData = [].concat(data);
-      newData.push({
-        type: "filled",
-        data: {
-          id: item.id,
-          name: item.title,
-          units: item.units,
-          count: "1",
-          price: String(item.price),
-          percent: "100",
-          total: String(item.price),
-        }
-      });
+      if ( result === "Подзаголовок" ) {
+        newData.push({
+          type: "subtitle",
+          data: {
+            id: Math.floor(Math.random() * -10000),
+            title: "Подзаголовок",
+          }
+        });
+      } else {
+        newData.push({
+          type: "filled",
+          data: {
+            id: item.id,
+            name: item.title,
+            units: item.units,
+            count: "1",
+            price: String(item.price),
+            percent: "100",
+            total: String(item.price),
+          }
+        });
+      }
       setData(() => newData);
     });
   };

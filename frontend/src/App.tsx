@@ -43,7 +43,10 @@ function App() {
           return
         };
         setWorksAutocomplete(() => {
-          return [].concat(data)
+          return [].concat(data, {
+            id: -1,
+            title: "Подзаголовок",
+          })
         });
       });
     getListMaterials()
@@ -52,7 +55,10 @@ function App() {
           return
         }
           setMaterialsAutocomplete(() => {
-            return [].concat(data)
+            return [].concat(data, {
+              id: -1,
+              title: "Подзаголовок",
+            })
           });
       });
   }, []);
