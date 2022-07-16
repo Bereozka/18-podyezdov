@@ -5,11 +5,46 @@ import { Table } from "./components/table";
 import { TableRow } from "./interfaces/table";
 import { getListWorks, getListMaterials } from "./services/api";
 import { WorkModel, MaterialModel } from "./interfaces/services/api";
+import { Button } from "./components/button";
+import { getExcelFileRequest } from "./services/api";
 
 function App() {
 
-  const [workData, setWorkData] = React.useState<Array<TableRow>>([]);
-  const [materialData, setMaterialData] = React.useState<Array<TableRow>>([]);
+  const [workData, setWorkData] = React.useState<Array<TableRow>>([
+    {
+      type: "filled",
+      data: {
+        id: 1,
+        name: "Наименование работ",
+        units: "units",
+        count: "23",
+        price: "100",
+        percent: "100",
+        total: "2300",
+      }
+    },
+    {
+      type: "subtitle",
+      data: {
+        id: 2,
+        title: "subtitle",
+      }
+    },
+  ]);
+  const [materialData, setMaterialData] = React.useState<Array<TableRow>>([
+    {
+      type: "filled",
+      data: {
+        id: 1,
+        name: "Наименование dsfk",
+        units: "units",
+        count: "23",
+        price: "100",
+        percent: "100",
+        total: "2300",
+      }
+    },
+  ]);
   const [worksAutocomplete, setWorksAutocomplete] = React.useState<Array<WorkModel>>([]);
   const [materialsAutocomplete, setMaterialsAutocomplete] = React.useState<Array<MaterialModel>>([]);
 
@@ -63,6 +98,10 @@ function App() {
       });
   }, []);
 
+  let getExcelFile = (event: React.MouseEvent): void => {
+    getExcelFileRequest(workData, materialData);
+  };
+
   return (
     <div className="App">
       <div className="content">
@@ -79,6 +118,12 @@ function App() {
             autocompleteList={materialsAutocomplete}
             theadItems={materialsThead}
           />
+        <div className="d-flex flex-row wrapper">
+          <Button
+            onClickHandler={getExcelFile}
+          >Сгенерировать excel</Button>
+          <Button>Сгенерировать excel</Button>
+        </div>
         </div>
       </div>
     </div>

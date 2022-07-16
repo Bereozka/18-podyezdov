@@ -3,6 +3,15 @@ from rest_framework.generics import (
     ListCreateAPIView,
 )
 # from rest_framework.permissions import IsAuthenticated
+
+from django.http import JsonResponse
+from django.views.decorators.csrf import csrf_exempt
+
+from docx import Document
+
+import json
+
+# locale imports
 from .models import (
     WorkModel,
     MaterialModel,
@@ -15,6 +24,7 @@ from .serializers import (
     WorksMaterialsSerializer,
 )
 from .pagination import CustomPagination
+from .services import create_word_file
 
 
 class ListCreateWorkModelAPIView(ListCreateAPIView):
@@ -68,3 +78,16 @@ class RetrieveUpdateDestroyWorksMaterialsModelAPIView(
     serializer_class = WorksMaterialsSerializer
     queryset = WorksMaterialsModel.objects.all()
     # permission_classes = [IsAuthenticated, IsOwnerOrReadOnly]
+
+
+@csrf_exempt
+def get_word_file(request):
+    # if request.method == "POST":
+
+    print(request.body)
+    body = json.loads(request.body.decode("utf-8"))
+    create_word_file(
+        body["workData"],
+        body["materialData"],
+    )
+    return JsonResponse({"hello": "world"})

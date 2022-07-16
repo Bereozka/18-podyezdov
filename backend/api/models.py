@@ -20,6 +20,7 @@ class WorkModel(models.Model):
     class Meta:
         verbose_name = "Работа"
         verbose_name_plural = "Работы"
+        ordering = ['id']
 
 
 class MaterialModel(models.Model):
@@ -44,6 +45,7 @@ class MaterialModel(models.Model):
     class Meta:
         verbose_name = "Материал"
         verbose_name_plural = "Материалы"
+        ordering = ['id']
 
 
 class WorksMaterialsModel(models.Model):
@@ -71,3 +73,4 @@ class WorksMaterialsModel(models.Model):
     class Meta:
         verbose_name = "Работы и Материалы"
         verbose_name_plural = "Работы и Материалы"
+        ordering = ['id']
