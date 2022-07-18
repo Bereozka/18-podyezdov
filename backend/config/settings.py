@@ -16,18 +16,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = config("SECRET_KEY")
+SECRET_KEY = "someskdjfsS923KFjw9dsdkf"
 
 # SECURITY WARNING: don"t run with debug turned on in production!
-DEBUG = config("DEBUG") == "True"
+DEBUG = "True"
 
-ALLOWED_HOSTS = []
-hosts = config("ALLOWED_HOSTS").split(" ")
-BASE_URL = "https://" + hosts[0]
-for host in hosts:
-    host = host.strip()
-    if host:
-        ALLOWED_HOSTS.append(host)
+ALLOWED_HOSTS = ["*", "18rem.ru", "www.18rem.ru"]
 
 
 INSTALLED_APPS = [
@@ -144,4 +138,6 @@ STATICFILES_DIRS = [
 
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',
+    'http://18rem.ru',
+    'https://18rem.ru',
 ]
