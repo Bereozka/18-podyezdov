@@ -140,4 +140,5 @@ CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',
     'http://18rem.ru',
     'https://18rem.ru',
+    "http://localhost:8000",
 ]

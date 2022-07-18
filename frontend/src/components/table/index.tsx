@@ -1,44 +1,31 @@
 import * as React from "react";
-import { Dispatch, SetStateAction } from "react";
 
 import { Thead } from "./thead";
 import { Tbody } from "./tbody";
 
-import { TableRow } from "../../interfaces/table";
-
 interface DataProps {
-  workData: Array<TableRow>;
-  setWorkData?: Dispatch<SetStateAction<Array<TableRow>>>;
-  materialData: Array<TableRow>;
-  setMaterialData?: Dispatch<SetStateAction<Array<TableRow>>>;
+  data: any;
+  setData: any;
+  autocompleteList: any;
+  theadItems: string[];
 }
 
 
 export const Table = React.memo(({
-  workData,
-  setWorkData,
-  materialData,
-  setMaterialData,
+  data,
+  setData,
+  autocompleteList,
+  theadItems,
 }: DataProps) => {
-
-  const thead_items = [
-    "№",
-    "НАИМЕНОВАНИЕ РАБОТ",
-    "ЕД. ИЗМ",
-    "КОЛ-ВО",
-    "ЦЕНА, (₽)",
-    "%",
-    "∑, (₽)",
-    "Кнопка",
-  ]
 
   return (
     <div>
     <table className="table">
-      <Thead items={thead_items} />
+      <Thead items={theadItems} />
       <Tbody 
-        data={workData}
-        setData={setWorkData}
+        data={data}
+        setData={setData}
+        autocompleteList={autocompleteList}
       />
     </table>
     </div>

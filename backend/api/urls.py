@@ -8,6 +8,7 @@ from .views import (
     RetrieveUpdateDestroyMaterialModelAPIView,
     ListCreateWorksMaterialsModelAPIView,
     RetrieveUpdateDestroyWorksMaterialsModelAPIView,
+    get_word_file,
 )
 
 
@@ -42,4 +43,5 @@ urlpatterns = [
         RetrieveUpdateDestroyWorksMaterialsModelAPIView.as_view(),
         name="get_delete_update_worksmaterials",
     ),
+    path("get-word-file/", get_word_file),
 ]
