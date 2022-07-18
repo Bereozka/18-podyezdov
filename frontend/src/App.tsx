@@ -6,7 +6,7 @@ import { TableRow } from "./interfaces/table";
 import { getListWorks, getListMaterials } from "./services/api";
 import { WorkModel, MaterialModel } from "./interfaces/services/api";
 import { Button } from "./components/button";
-import { getExcelFileRequest } from "./services/api";
+import { getWordFileRequest } from "./services/api";
 
 function App() {
 
@@ -98,8 +98,8 @@ function App() {
       });
   }, []);
 
-  let getExcelFile = (event: React.MouseEvent): void => {
-    getExcelFileRequest(workData, materialData);
+  let getWordFile = (event: React.MouseEvent): void => {
+    getWordFileRequest(workData, materialData);
   };
 
   return (
@@ -120,8 +120,8 @@ function App() {
           />
         <div className="d-flex flex-row wrapper">
           <Button
-            onClickHandler={getExcelFile}
-          >Сгенерировать excel</Button>
+            onClickHandler={getWordFile}
+          >Сгенерировать word</Button>
           <Button>Сгенерировать excel</Button>
         </div>
         </div>

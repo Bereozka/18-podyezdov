@@ -3,24 +3,24 @@ import axios from "axios";
 import { BACKEND_URL } from "../../../common/constants";
 import { TableRow } from "../../../interfaces/table";
 
-interface Reponse {
-    hello: string;
-}
+const FileDownload = require('js-file-download');
 
-export const getExcelFileRequest = (
+export const getWordFileRequest = (
     workData: Array<TableRow>,
     materialData: Array<TableRow>,
 
 ) => {
-  return axios.post(
-    `${BACKEND_URL}/api/v1/get-word-file/`,
-    {
+  return axios({
+    url: `${BACKEND_URL}/api/v1/get-word-file/`,
+    method: "POST",
+    responseType: 'blob', // Important
+    data: {
       workData: workData,
       materialData: materialData,
-    }
-  )
-    .then((response): Response => {
-      return response.data.results;
-    })
-    .catch(err => console.log(err))
+    }})
+      .then((response): any => {
+        FileDownload(response.data, 'file.docx');
+      })
+      .catch(err => console.log(err));
 };
+

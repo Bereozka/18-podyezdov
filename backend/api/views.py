@@ -4,7 +4,7 @@ from rest_framework.generics import (
 )
 # from rest_framework.permissions import IsAuthenticated
 
-from django.http import JsonResponse
+from django.http import JsonResponse, FileResponse
 from django.views.decorators.csrf import csrf_exempt
 
 from docx import Document
@@ -24,7 +24,10 @@ from .serializers import (
     WorksMaterialsSerializer,
 )
 from .pagination import CustomPagination
-from .services import create_word_file
+from .services import (
+    create_word_file,
+    add_total_types,
+)
 
 
 class ListCreateWorkModelAPIView(ListCreateAPIView):
@@ -84,10 +87,12 @@ class RetrieveUpdateDestroyWorksMaterialsModelAPIView(
 def get_word_file(request):
     # if request.method == "POST":
 
-    print(request.body)
     body = json.loads(request.body.decode("utf-8"))
+    total_price = add_total_types(body)
     create_word_file(
         body["workData"],
         body["materialData"],
+        total_price,
     )
-    return JsonResponse({"hello": "world"})
+    file = open("files/finish.docx", "rb")
+    return FileResponse(file)
