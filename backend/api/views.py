@@ -4,10 +4,11 @@ from rest_framework.generics import (
 )
 # from rest_framework.permissions import IsAuthenticated
 
-from django.http import JsonResponse, FileResponse
+from django.http import FileResponse
 from django.views.decorators.csrf import csrf_exempt
+from django.conf import settings
 
-from docx import Document
+import os
 
 import os
 
@@ -28,6 +29,7 @@ from .serializers import (
 from .pagination import CustomPagination
 from .services import (
     create_word_file,
+    create_excel_file,
     add_total_types,
 )
 
@@ -89,15 +91,30 @@ class RetrieveUpdateDestroyWorksMaterialsModelAPIView(
 
 @csrf_exempt
 def get_word_file(request):
-    # if request.method == "POST":
+    if request.method == "POST":
+        body = json.loads(request.body.decode("utf-8"))
+        total_price = add_total_types(body)
+        create_word_file(
+            body["workData"],
+            body["materialData"],
+            total_price,
+            os.path.join(settings.BASE_DIR, "files/template.docx"),
+            os.path.join(settings.BASE_DIR, "files/finish.docx"),
+        )
+        file = open("files/finish.docx", "rb")
+        return FileResponse(file)
 
-    body = json.loads(request.body.decode("utf-8"))
-    total_price = add_total_types(body)
-    create_word_file(
-        body["workData"],
-        body["materialData"],
-        total_price,
-    )
-    # return JsonResponse({"hello": os.path.join(settings.BASE_DIR, "finish.docx")})
-    file = open(os.path.join(settings.BASE_DIR, "files/finish.docx"), "rb")
-    return FileResponse(file)
+
+@csrf_exempt
+def get_excel_file(request):
+    if request.method == "POST":
+        body = json.loads(request.body.decode("utf-8"))
+        create_excel_file(
+            body["workData"],
+            body["materialData"],
+            os.path.join(settings.BASE_DIR, "files/template.xlsx"),
+            os.path.join(settings.BASE_DIR, "files/finish.xlsx"),
+        )
+        file = open("files/finish.xlsx", "rb")
+        return FileResponse(file)
+

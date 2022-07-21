@@ -24,3 +24,24 @@ export const getWordFileRequest = (
       .catch(err => console.log(err));
 };
 
+
+export const getExcelFileRequest = (
+    workData: Array<TableRow>,
+    materialData: Array<TableRow>,
+
+) => {
+  return axios({
+    url: `${BACKEND_URL}/api/v1/get-excel-file/`,
+    method: "POST",
+    responseType: 'blob', // Important
+    data: {
+      workData: workData,
+      materialData: materialData,
+    }})
+      .then((response): any => {
+        FileDownload(response.data, 'file.xlsx');
+      })
+      .catch(err => console.log(err));
+};
+
+

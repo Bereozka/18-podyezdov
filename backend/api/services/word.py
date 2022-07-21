@@ -11,18 +11,20 @@ from typing_extensions import Literal
 from django.conf import settings
 
 def create_word_file(
-    workData,
-    materialData,
+    work_data,
+    material_data,
     total_price,
+    template_path,
+    final_file_path,
 ):
-    doc = Document(os.path.join(settings.BASE_DIR, "files/template.docx"))
+    doc = Document(template_path)
 
     table = doc.tables[0]
-    insert_info_into_table(workData, table)
-    insert_info_into_table(materialData, doc.tables[1])
+    insert_info_into_table(work_data, table)
+    insert_info_into_table(material_data, doc.tables[1])
     add_total_price(doc.paragraphs, total_price)
 
-    doc.save(os.path.join(settings.BASE_DIR, "files/finish.docx"))
+    doc.save(final_file_path)
 
 
 def add_total_price(
@@ -145,8 +147,8 @@ def insert_total_row(
 def insert_formatted_text(
     paragraph: Paragraph,
     value: str,
-    alignment: Literal["left", "center", "right"] = "left",
     bold: bool = False,
+    alignment: Literal["left", "center", "right"] = "left",
     font_size: Union[int, float] = 10.5,
 ) -> None:
     """Formats the paragraph text
@@ -157,10 +159,10 @@ def insert_formatted_text(
         An object of the Paragraph class
     value : str
         The text to be written in the paragraph
-    alignment : {"left", "center", "right"}, default: "left"
-        Text alignment
     bold : bool, default: False
         Text weight
+    alignment : {"left", "center", "right"}, default: "left"
+        Text alignment
     font_size : int, default: 10.5
         Text font size
 
@@ -175,10 +177,10 @@ def insert_formatted_text(
         raise ValueError("Parameter paragraph should be type Paragraph")
     elif not isinstance(value, str):
         raise ValueError("Parameter value should be str")
-    elif alignment not in ("left", "center", "right"):
-        raise ValueError("Parameter alignment should be str")
     elif not isinstance(bold, bool):
         raise ValueError("Parameter bold should be bool")
+    elif alignment not in ("left", "center", "right"):
+        raise ValueError("Parameter alignment should be str")
     elif not isinstance(font_size, (int, float)):
         raise ValueError("Parameter font_size should be int or float")
 
@@ -196,35 +198,3 @@ def insert_formatted_text(
 
     # font size
     runner.font.size = Pt(font_size)
-
-
-def add_total_types(
-    data,
-):
-    work_price = get_total_price(data["workData"])
-    data["workData"].append({
-        "type": "total",
-        "data": {
-            "value": f"ИТОГО: {work_price} Р"
-        },
-    })
-
-    material_price = get_total_price(data["materialData"])
-    data["materialData"].append({
-        "type": "total",
-        "data": {
-            "value": f"ИТОГО: {material_price} Р"
-        },
-    })
-    return f"ВСЕГО: {work_price + material_price} Р"
-
-
-def get_total_price(
-    data,
-):
-    total_price = 0
-    for item in data:
-        if "total" in item["data"]:
-            total = item["data"]["total"]
-            total_price += float(total)
-    return total_price
