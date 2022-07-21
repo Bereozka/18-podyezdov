@@ -6,7 +6,7 @@ import { TableRow } from "./interfaces/table";
 import { getListWorks, getListMaterials } from "./services/api";
 import { WorkModel, MaterialModel } from "./interfaces/services/api";
 import { Button } from "./components/button";
-import { getWordFileRequest } from "./services/api";
+import { getWordFileRequest, getExcelFileRequest } from "./services/api";
 
 function App() {
 
@@ -102,6 +102,10 @@ function App() {
     getWordFileRequest(workData, materialData);
   };
 
+  let getExcelFile = (event: React.MouseEvent): void => {
+    getExcelFileRequest(workData, materialData);
+  }
+
   return (
     <div className="App">
       <div className="content">
@@ -122,7 +126,9 @@ function App() {
           <Button
             onClickHandler={getWordFile}
           >Сгенерировать word</Button>
-          <Button>Сгенерировать excel</Button>
+          <Button
+            onClickHandler={getExcelFile}
+          >Сгенерировать excel</Button>
         </div>
         </div>
       </div>
