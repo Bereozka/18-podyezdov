@@ -2,23 +2,27 @@ from docx import Document
 from docx.shared import Pt
 from docx.text.paragraph import Paragraph
 
+import os
+
 from typing import Union
 from typing_extensions import Literal
 
+# locale imports
+from django.conf import settings
 
 def create_word_file(
     workData,
     materialData,
     total_price,
 ):
-    doc = Document("files/template.docx")
+    doc = Document(os.path.join(settings.BASE_DIR, "files/template.docx"))
 
     table = doc.tables[0]
     insert_info_into_table(workData, table)
     insert_info_into_table(materialData, doc.tables[1])
     add_total_price(doc.paragraphs, total_price)
 
-    doc.save("files/finish.docx")
+    doc.save(os.path.join(settings.BASE_DIR, "files/finish.docx"))
 
 
 def add_total_price(

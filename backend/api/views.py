@@ -9,6 +9,8 @@ from django.views.decorators.csrf import csrf_exempt
 
 from docx import Document
 
+import os
+
 import json
 
 # locale imports
@@ -28,6 +30,8 @@ from .services import (
     create_word_file,
     add_total_types,
 )
+
+from django.conf import settings
 
 
 class ListCreateWorkModelAPIView(ListCreateAPIView):
@@ -94,5 +98,6 @@ def get_word_file(request):
         body["materialData"],
         total_price,
     )
-    file = open("files/finish.docx", "rb")
+    # return JsonResponse({"hello": os.path.join(settings.BASE_DIR, "finish.docx")})
+    file = open(os.path.join(settings.BASE_DIR, "files/finish.docx"), "rb")
     return FileResponse(file)
