@@ -1,0 +1,23 @@
+{
+     "settings": {
+        "python_interpreter": "./backend/venv/bin/python",
+        "font_size": 11,
+        "translate_tabs_to_spaces": true,
+        "tab_size": 2,
+     },
+    "build_systems":
+    [
+        {
+            "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+            "name": "Anaconda Python Builder",
+            "selector": "source.python",
+            "shell_cmd": "\"./backend/venv/bin/python\" -u \"$file\"",
+        }
+    ],
+    "folders":
+    [
+        {
+            "path": ".",
+        }
+    ],
+}

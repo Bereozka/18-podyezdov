@@ -9,4 +9,5 @@ export interface Row {
   percent?: string;
   total?: string;
   title?: string;
+  db_index?: string;
 };

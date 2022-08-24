@@ -58,6 +58,7 @@ export const NewRow = React.memo(({
           price: String(currentItem.price),
           percent: "100",
           total: String(currentItem.price),
+          db_index: currentItem.id,
         }
       });
     } else {

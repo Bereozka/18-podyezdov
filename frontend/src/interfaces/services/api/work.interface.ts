@@ -8,7 +8,7 @@ export interface WorkModel {
   units: string;
   price: number;
   price_staff: number;
-  workmaterials: string[];
+  worksmaterials: string[];
 };
 
 export interface WorksListResponse extends Response {

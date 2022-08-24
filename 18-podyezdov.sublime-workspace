@@ -1,0 +1,979 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"setMater",
+				"setMaterialData"
+			],
+			[
+				"pre",
+				"prevWorkData"
+			],
+			[
+				"Work",
+				"WorksMaterialsModel"
+			],
+			[
+				"work",
+				"workmaterial"
+			],
+			[
+				"is",
+				"is_order"
+			],
+			[
+				"order",
+				"order_model"
+			],
+			[
+				"cs",
+				"CsrfExemptMixin"
+			],
+			[
+				"quan",
+				"quantity"
+			],
+			[
+				"qun",
+				"quantity"
+			],
+			[
+				"socia",
+				"social_network"
+			],
+			[
+				"dis",
+				"discount"
+			],
+			[
+				"qu",
+				"quantity"
+			],
+			[
+				"ordr",
+				"order_by"
+			],
+			[
+				"soc",
+				"social_network"
+			],
+			[
+				"Servi",
+				"ServiceModel"
+			],
+			[
+				"social",
+				"social_network"
+			],
+			[
+				"get",
+				"getPrice"
+			],
+			[
+				"soci",
+				"social_network"
+			],
+			[
+				"Socia",
+				"SocialNetworkModel"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"res",
+				"rest_framework"
+			],
+			[
+				"se",
+				"ServiceModel"
+			],
+			[
+				"url",
+				"urlpatterns"
+			],
+			[
+				"Http",
+				"HttpResponseForbidden"
+			],
+			[
+				"pars",
+				"parse_obj"
+			],
+			[
+				"Ba",
+				"BaseModel"
+			],
+			[
+				"Base",
+				"BaseModel"
+			],
+			[
+				"New",
+				"NewOrderView"
+			],
+			[
+				"Ser",
+				"ServicesView"
+			],
+			[
+				"Sev",
+				"SecretKeyView"
+			],
+			[
+				"ad",
+				"ads_list"
+			],
+			[
+				"main_",
+				"main_menu_button"
+			],
+			[
+				"ente",
+				"enter_title"
+			],
+			[
+				"new",
+				"new_order"
+			],
+			[
+				"send",
+				"sendmessage0"
+			],
+			[
+				"Ht",
+				"HttpResponse"
+			],
+			[
+				"aut",
+				"authentication"
+			],
+			[
+				"imag",
+				"image_path"
+			],
+			[
+				"user",
+				"user_data"
+			],
+			[
+				"con",
+				"continue"
+			],
+			[
+				"profil",
+				"profile_socials"
+			],
+			[
+				"get_or_crea",
+				"get_or_create_message"
+			],
+			[
+				"user_",
+				"user_data"
+			],
+			[
+				"-------------",
+				"---------------------------------------------------"
+			],
+			[
+				"one",
+				"one_time"
+			],
+			[
+				"get_mana",
+				"get_management_ads_keyboard"
+			],
+			[
+				"get_my",
+				"get_management_ads_keyboard"
+			],
+			[
+				"desc",
+				"description"
+			],
+			[
+				"mess",
+				"message_text"
+			],
+			[
+				"my_ads_hand",
+				"my_ads_handler("
+			],
+			[
+				"ev",
+				"event=event,"
+			],
+			[
+				"image",
+				"images = State(\"images\")"
+			],
+			[
+				"enter",
+				"enter_title"
+			],
+			[
+				"message_map",
+				"message_mapper"
+			],
+			[
+				"get_orc",
+				"get_or_create_message"
+			],
+			[
+				"maybe",
+				"maybe_you_mean"
+			],
+			[
+				"get_or_creat",
+				"get_or_create_message"
+			],
+			[
+				"get_or_cre",
+				"get_or_create_message"
+			],
+			[
+				"titl",
+				"title"
+			],
+			[
+				"key",
+				"keyboard = Keyboard"
+			],
+			[
+				"k",
+				"keyboard.add_text_button(\""
+			],
+			[
+				"ke",
+				"keyboard.add_text_button(\""
+			],
+			[
+				"fle",
+				"flex-direction:"
+			],
+			[
+				"hea",
+				"header__title"
+			],
+			[
+				"m",
+				"min-width: 768px) {"
+			],
+			[
+				"color",
+				"color: #fff;"
+			],
+			[
+				"lo",
+				"logo.png"
+			],
+			[
+				"import",
+				"import Registration"
+			],
+			[
+				"MyAdsSt",
+				"MyAdsState(State):"
+			],
+			[
+				"create_user_dire",
+				"create_user_directory(user_id: Union[str, int]) ->"
+			],
+			[
+				"Union",
+				"Union[str, str"
+			],
+			[
+				"messa",
+				"message_text"
+			],
+			[
+				"getExce",
+				"getExcelFile}"
+			],
+			[
+				"getE",
+				"getExcelFileRequest"
+			],
+			[
+				"onCli",
+				"onClickHandler={get"
+			],
+			[
+				"Re",
+				"React.MouseEvent):"
+			],
+			[
+				"create_excel",
+				"create_excel_file"
+			],
+			[
+				"create",
+				"create_word_file"
+			],
+			[
+				"material",
+				"material_data"
+			],
+			[
+				"rase",
+				"raise ValueError(\"Parameter final_file_path should be a str\")"
+			],
+			[
+				"not",
+				"not isinstance(template"
+			],
+			[
+				"ra",
+				"raise ValueError(\"Parameter template_path should be a str\""
+			],
+			[
+				"templ",
+				"template_path"
+			],
+			[
+				"no",
+				"not"
+			],
+			[
+				"list",
+				"list):"
+			],
+			[
+				"nu",
+				"numbers_list"
+			],
+			[
+				"da",
+				"data should be a list\")"
+			],
+			[
+				"dat",
+				"data, list):"
+			],
+			[
+				"eli",
+				"elif isinstance(works"
+			],
+			[
+				"to",
+				"total, str):"
+			],
+			[
+				"pri",
+				"price, str"
+			],
+			[
+				"co",
+				"count, str"
+			],
+			[
+				"elif",
+				"elif not isinstance("
+			],
+			[
+				"row",
+				"row_index, int):"
+			],
+			[
+				"rais",
+				"raise ValueError(\"Parameter worksheet should be a Worksheet\")"
+			],
+			[
+				"in",
+				"index,"
+			],
+			[
+				"sho",
+				"should be a Worksheet"
+			],
+			[
+				"Par",
+				"Parameter"
+			],
+			[
+				"wor",
+				"worksheet"
+			],
+			[
+				"rai",
+				"raise ValueError(\"Parameter alignment should be a str\")"
+			],
+			[
+				"bo",
+				"bool\")"
+			],
+			[
+				"bol",
+				"bold, bool):"
+			],
+			[
+				"i",
+				"isinstance(value,"
+			],
+			[
+				"ite",
+				"items[i]"
+			],
+			[
+				"c",
+				"count, price, total]"
+			],
+			[
+				"shou",
+				"should be a Cell"
+			],
+			[
+				"bott",
+				"bottom=Side(style=\"thin\"),"
+			],
+			[
+				"top",
+				"top=Side(style=\"thin\"),"
+			],
+			[
+				"ri",
+				"right="
+			],
+			[
+				"hori",
+				"horizontal="
+			],
+			[
+				"Ali",
+				"Alignment("
+			],
+			[
+				"impr",
+				"import Literal"
+			],
+			[
+				"typ",
+				"typing_extensions"
+			],
+			[
+				"insert_info_",
+				"insert_info_into_table"
+			],
+			[
+				"Rows",
+				"RowsModel"
+			],
+			[
+				"material_data",
+				"material_data: list = Field(None, alias=\"materialData\")"
+			],
+			[
+				"typi",
+				"typing_extensions"
+			],
+			[
+				"RowData",
+				"RowDataModel"
+			],
+			[
+				"ty",
+				"type\"] == \"subtitle"
+			],
+			[
+				"inde",
+				"index_item + 2}"
+			],
+			[
+				"merg",
+				"merged_cells"
+			],
+			[
+				"type",
+				"type\"] =="
+			],
+			[
+				"ws",
+				"ws[f\"E{iindex_item + 2}\"]"
+			],
+			[
+				"ind",
+				"index_item + 2}\"] = item[\""
+			],
+			[
+				"__",
+				"__name__ == '__main__':"
+			],
+			[
+				"settin",
+				"settings.BASE_DIR, \"files/"
+			],
+			[
+				"fo",
+				"font_size="
+			],
+			[
+				"bold",
+				"bold=True,"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"setting",
+				"Preferences: Settings"
+			],
+			[
+				"pretty",
+				"Pretty JSON: Format JSON"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"json",
+				"Set Syntax: JSON"
+			],
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"reinde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"reindent",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"reident",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"line",
+				"Sort Lines"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"git push",
+				"Git: Push"
+			],
+			[
+				"git comm",
+				"Git: Commit"
+			],
+			[
+				"git add ",
+				"Git: Add All"
+			],
+			[
+				"git  push",
+				"Git: Push"
+			],
+			[
+				"git ",
+				"Git: Commit"
+			],
+			[
+				"git add",
+				"Git: Add..."
+			],
+			[
+				"git",
+				"Git: Commit"
+			],
+			[
+				"settn",
+				"Preferences: Settings"
+			],
+			[
+				"settin",
+				"Preferences: Settings"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"disable",
+				"Package Control: Disable Package"
+			],
+			[
+				"isntal",
+				"Package Control: Install Package"
+			],
+			[
+				"di",
+				"Package Control: Disable Package"
+			],
+			[
+				"sett",
+				"Preferences: Settings"
+			],
+			[
+				"enabl",
+				"Package Control: Enable Package"
+			],
+			[
+				"disab",
+				"Package Control: Disable Package"
+			],
+			[
+				"settins",
+				"Preferences: Settings"
+			],
+			[
+				"ena",
+				"Package Control: Enable Package"
+			],
+			[
+				"enable",
+				"Package Control: Enable Package"
+			],
+			[
+				"indenta",
+				"Indentation: Reindent Lines"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 198.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)\n",
+			"exit",
+			"exit()",
+			"exit(0",
+			"import os",
+			"wow",
+			"print(\"oke\")",
+			" ls",
+			" ды",
+			"ды"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/kirill9366/Documents/18-podyezdov",
+		"/Users/kirill9366/Documents/18-podyezdov/backend",
+		"/Users/kirill9366/Documents/18-podyezdov/backend/api",
+		"/Users/kirill9366/Documents/18-podyezdov/backend/api/services",
+		"/Users/kirill9366/Documents/18-podyezdov/frontend",
+		"/Users/kirill9366/Documents/18-podyezdov/frontend/src",
+		"/Users/kirill9366/Documents/18-podyezdov/frontend/src/components",
+		"/Users/kirill9366/Documents/18-podyezdov/frontend/src/components/table",
+		"/Users/kirill9366/Documents/18-podyezdov/frontend/src/components/table/row",
+		"/Users/kirill9366/Documents/18-podyezdov/frontend/src/components/table/row/new",
+		"/Users/kirill9366/Documents/18-podyezdov/frontend/src/interfaces",
+		"/Users/kirill9366/Documents/18-podyezdov/frontend/src/interfaces/services",
+		"/Users/kirill9366/Documents/18-podyezdov/frontend/src/interfaces/services/api",
+		"/Users/kirill9366/Documents/18-podyezdov/frontend/src/interfaces/table",
+		"/Users/kirill9366/Documents/18-podyezdov/frontend/src/services",
+		"/Users/kirill9366/Documents/18-podyezdov/frontend/src/services/api",
+		"/Users/kirill9366/Documents/18-podyezdov/frontend/src/services/api/material",
+		"/Users/kirill9366/Documents/18-podyezdov/frontend/src/services/api/work",
+		"/Users/kirill9366/Documents/18-podyezdov/frontend/src/services/api/worksmaterials"
+	],
+	"file_history":
+	[
+		"/Users/kirill9366/Documents/18-podyezdov/frontend/src/services/api/worksmaterials/index.ts",
+		"/Users/kirill9366/Documents/18-podyezdov/frontend/src/services/api/material/index.ts",
+		"/Users/kirill9366/Documents/18-podyezdov/frontend/src/interfaces/table/row.interface.ts",
+		"/Users/kirill9366/Documents/18-podyezdov/frontend/src/App.tsx",
+		"/Users/kirill9366/Documents/18-podyezdov/backend/api/services/word.py",
+		"/Users/kirill9366/Documents/18-podyezdov/backend/api/services/excel.py",
+		"/Users/kirill9366/Documents/18-podyezdov/frontend/src/interfaces/services/api/material.interface.ts",
+		"/Users/kirill9366/Documents/18-podyezdov/frontend/src/services/api/work/index.ts",
+		"/Users/kirill9366/Documents/18-podyezdov/frontend/src/interfaces/services/api/work.interface.ts",
+		"/Users/kirill9366/Documents/18-podyezdov/frontend/src/interfaces/services/api/index.ts",
+		"/Users/kirill9366/Documents/18-podyezdov/frontend/src/services/api/index.ts",
+		"/Users/kirill9366/Documents/18-podyezdov/frontend/src/interfaces/services/api/worksmaterials.interface.ts",
+		"/Users/kirill9366/Documents/18-podyezdov/frontend/src/components/table/row/new/index.tsx",
+		"/Users/kirill9366/Documents/18-podyezdov/frontend/src/common/constants/app/index.ts",
+		"/Users/kirill9366/Documents/18-podyezdov/18-podyezdov.sublime-project",
+		"/Users/kirill9366/Documents/SMM-GROUP/site/apps/cabinet/urls.py",
+		"/Users/kirill9366/Documents/SMM-GROUP/site/static/js/price.js",
+		"/Users/kirill9366/Documents/SMM-GROUP/site/templates/main/index.html",
+		"/Users/kirill9366/Documents/SMM-GROUP/site/apps/cabinet/admin.py",
+		"/Users/kirill9366/Documents/SMM-GROUP/site/services/common.py",
+		"/Users/kirill9366/Documents/SMM-GROUP/site/apps/cabinet/views.py",
+		"/Users/kirill9366/Documents/SMM-GROUP/site/templates/cabinet/cabinet.html",
+		"/Users/kirill9366/Documents/SMM-GROUP/site/static/js/basket.js",
+		"/Users/kirill9366/Documents/SMM-GROUP/site/apps/api/urls.py",
+		"/Users/kirill9366/Documents/SMM-GROUP/site/apps/api/views.py",
+		"/Users/kirill9366/Documents/SMM-GROUP/site/templates/components/header/header.html",
+		"/Users/kirill9366/Documents/SMM-GROUP/site/config/core/__init__.py",
+		"/Users/kirill9366/Documents/SMM-GROUP/site/config/core/auth.py",
+		"/Users/kirill9366/Documents/SMM-GROUP/site/config/core/__init__,py",
+		"/Users/kirill9366/Documents/SMM-GROUP/site/templates/authentication/signup.html",
+		"/Users/kirill9366/Documents/SMM-GROUP/site/apps/cabinet/models.py",
+		"/Users/kirill9366/Documents/SMM-GROUP/site/static/js/order.js",
+		"/Users/kirill9366/Documents/SMM-GROUP/site/templates/authentication/login.html",
+		"/Users/kirill9366/Documents/SMM-GROUP/site/entrypoint.sh",
+		"/Users/kirill9366/Documents/SMM-GROUP/site/apps/cabinet/forms.py",
+		"/Users/kirill9366/Documents/SMM-GROUP/site/apps/api/utils.py",
+		"/Users/kirill9366/Documents/SMM-GROUP/site/config/settings.py",
+		"/Users/kirill9366/Documents/SMM-GROUP/site/apps/cabinet/fixtures/discount.json",
+		"/Users/kirill9366/Documents/SMM-GROUP/site/templates/components/header/auth_header.html",
+		"/Users/kirill9366/Documents/SMM-GROUP/site/apps/api/serializers.py",
+		"/Users/kirill9366/Documents/SMM-GROUP/site/apps/cabinet/fixtures/service.json",
+		"/Users/kirill9366/Documents/SMM-GROUP/site/apps/cabinet/fixtures/social_network.json",
+		"/Users/kirill9366/Documents/SMM-GROUP/site/apps/authentication/fixtures/superuser.json",
+		"/Users/kirill9366/Documents/SMM-GROUP/smm-group.sublime-project",
+		"/Users/kirill9366/Documents/SMM-GROUP/site/apps/__init__.py",
+		"/Users/kirill9366/Documents/SMM-GROUP/site/config/urls.py",
+		"/Users/kirill9366/Documents/SMM-GROUP/site/apps/api/apps.py",
+		"/Users/kirill9366/Documents/SMM-GROUP/site/apps/main/views.py",
+		"/Users/kirill9366/Documents/SMM-GROUP/site/static/css/main.css",
+		"/Users/kirill9366/Documents/SMM-GROUP/site/templates/main/services.html",
+		"/Users/kirill9366/Documents/SMM-GROUP/site/templates/news/news.html",
+		"/Users/kirill9366/Documents/SMM-GROUP/site/templates/base.html",
+		"/Users/kirill9366/Documents/SMM-GROUP/site/templates/balance/balance.html",
+		"/Users/kirill9366/Documents/SMM-GROUP/site/templates/cabinet/friend.html",
+		"/Users/kirill9366/Documents/SMM-GROUP/site/templates/cabinet/order.html",
+		"/Users/kirill9366/Documents/SMM-GROUP/site/templates/base2.html",
+		"/Users/kirill9366/Documents/SMM-GROUP/site/apps/balance/views.py",
+		"/Users/kirill9366/Documents/SMM-GROUP/site/apps/news/views.py",
+		"/Users/kirill9366/Documents/SMM-GROUP/site/templates/authentication/changepass.html",
+		"/Users/kirill9366/Documents/SMM-GROUP/site/apps/authentication/views.py",
+		"/Users/kirill9366/Documents/SMM-GROUP/site/templates/authentication/soc_auth.html",
+		"/Users/kirill9366/Documents/SMM-GROUP/site/services/bigsmm.py",
+		"/Users/kirill9366/Documents/SMM-GROUP/site/templates/authentication/forgot-pass.html",
+		"/Users/kirill9366/Documents/SMM-GROUP/site/templates/cabinet.html",
+		"/Users/kirill9366/Documents/SMM-GROUP/site/templates/order.html",
+		"/Users/kirill9366/Documents/SMM-GROUP/entrypoint.sh",
+		"/Users/kirill9366/Documents/SMM-GROUP/site/.env",
+		"/Users/kirill9366/Documents/baraholka-bot/bot/handlers/users/create_ad.py",
+		"/Users/kirill9366/Documents/baraholka-bot/bot/utils/keyboards.py",
+		"/Users/kirill9366/Documents/baraholka-bot/bot/handlers/users/menu.py",
+		"/Users/kirill9366/Documents/baraholka-bot/bot/handlers/users/find_ad.py",
+		"/Users/kirill9366/Documents/baraholka-bot/bot/database/models.py",
+		"/Users/kirill9366/Documents/baraholka-bot/.env",
+		"/Users/kirill9366/Documents/baraholka-bot/bot/main.py",
+		"/Users/kirill9366/Documents/SMM-GROUP/.gitignore",
+		"/Users/kirill9366/Documents/SMM-GROUP/docker/nginx/nginx.conf",
+		"/Users/kirill9366/Documents/SMM-GROUP/site/Dockerfile",
+		"/Users/kirill9366/Documents/SMM-GROUP/docker-compose.yml",
+		"/Users/kirill9366/Documents/SMM-GROUP/site/requirements.txt",
+		"/Users/kirill9366/Documents/SMM-GROUP/site/apps/.env",
+		"/Users/kirill9366/Documents/SMM-GROUP/docker/nginx/Dockerfile",
+		"/Users/kirill9366/Documents/SMM-GROUP/.env.template",
+		"/Users/kirill9366/Documents/SMM-GROUP/.env",
+		"/Users/kirill9366/Documents/SMM-GROUP/site/some_help.txt",
+		"/Users/kirill9366/Documents/SMM-GROUP/site/apps/balance/urls.py",
+		"/Users/kirill9366/Documents/SMM-GROUP/site/apps/main/fixtures/faq.json",
+		"/Users/kirill9366/Documents/SMM-GROUP/site/templates/signup.html",
+		"/Users/kirill9366/Documents/SMM-GROUP/site/templates/services.html",
+		"/Users/kirill9366/Documents/SMM-GROUP/site/templates/news.html",
+		"/Users/kirill9366/Documents/SMM-GROUP/site/templates/login.html",
+		"/Users/kirill9366/Documents/SMM-GROUP/site/templates/index.html",
+		"/Users/kirill9366/Documents/SMM-GROUP/site/templates/friend.html",
+		"/Users/kirill9366/Documents/SMM-GROUP/site/templates/forgot-pass.html",
+		"/Users/kirill9366/Documents/SMM-GROUP/site/templates/changepass.html",
+		"/Users/kirill9366/Documents/SMM-GROUP/site/templates/balance.html",
+		"/Users/kirill9366/Documents/books/file.py",
+		"/Users/kirill9366/Documents/SMM-GROUP/site/services/mail.py",
+		"/Users/kirill9366/Documents/SMM-GROUP/site/__init__.py",
+		"/Users/kirill9366/Documents/SMM-GROUP/.entrypoint",
+		"/Users/kirill9366/Documents/SMM-GROUP/config/settings.py",
+		"/Users/kirill9366/Documents/SMM-GROUP/services/bigsmm.py",
+		"/Users/kirill9366/Documents/SMM-GROUP/types/bigsmm/__init__.py",
+		"/Users/kirill9366/Documents/SMM-GROUP/types/bigsmm/order.py",
+		"/Users/kirill9366/Documents/SMM-GROUP/types/__init__.py",
+		"/Users/kirill9366/Documents/SMM-GROUP/apps/cabinet/views.py",
+		"/Users/kirill9366/Documents/SMM-GROUP/apps/cabinet/models.py",
+		"/Users/kirill9366/Documents/SMM-GROUP/apps/balance/views.py",
+		"/Users/kirill9366/Documents/SMM-GROUP/apps/main/views.py",
+		"/Users/kirill9366/Documents/SMM-GROUP/apps/news/apps.py",
+		"/Users/kirill9366/Documents/SMM-GROUP/apps/main/apps.py",
+		"/Users/kirill9366/Documents/SMM-GROUP/apps/cabinet/apps.py",
+		"/Users/kirill9366/Documents/SMM-GROUP/apps/balance/apps.py",
+		"/Users/kirill9366/Documents/SMM-GROUP/config/urls.py",
+		"/Users/kirill9366/Documents/SMM-GROUP/apps/authentication/apps.py",
+		"/Users/kirill9366/Documents/SMM-GROUP/apps/__init__.py",
+		"/Users/kirill9366/Documents/SMM-GROUP/main/views.py",
+		"/Users/kirill9366/Documents/SMM-GROUP/cabinet/admin.py",
+		"/Users/kirill9366/Documents/SMM-GROUP/app/admin.py",
+		"/Users/kirill9366/Documents/SMM-GROUP/cabinet/urls.py",
+		"/Users/kirill9366/Documents/SMM-GROUP/app/urls.py",
+		"/Users/kirill9366/Documents/SMM-GROUP/cabinet/forms.py",
+		"/Users/kirill9366/Documents/SMM-GROUP/app/forms.py",
+		"/Users/kirill9366/Documents/SMM-GROUP/app/views.py",
+		"/Users/kirill9366/Documents/SMM-GROUP/cabinet/views.py",
+		"/Users/kirill9366/Documents/SMM-GROUP/app/models.py",
+		"/Users/kirill9366/Documents/SMM-GROUP/cabinet/models.py",
+		"/Users/kirill9366/Documents/SMM-GROUP/main/urls.py",
+		"/Users/kirill9366/Documents/SMM-GROUP/main/forms.py"
+	],
+	"find":
+	{
+		"height": 22.0
+	},
+	"find_in_files":
+	{
+		"height": 118.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"WorksMaterialsModel"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 42.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "18-podyezdov.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"frontend/webpack.config.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 305.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 549.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 273.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

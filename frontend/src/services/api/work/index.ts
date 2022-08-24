@@ -10,3 +10,11 @@ export const getListWorks = () => {
     })
     .catch(err => console.log(err))
 };
+
+export const getWork = (id: number | string) => {
+  return axios.get(`${BACKEND_URL}/api/v1/work/${id}/`)
+    .then((response): WorkModel => {
+      return response.data;
+    })
+    .catch(err => console.log(err))
+};

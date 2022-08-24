@@ -94,7 +94,7 @@ def insert_filled_row(
     for i in range(2, 6):
         insert_formatted_text(
             row.cells[i].paragraphs[0],
-            items[i - 2],
+            str(items[i - 2]),
             alignment="center",
         )
 

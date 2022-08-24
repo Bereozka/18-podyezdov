@@ -10,3 +10,11 @@ export const getListMaterials = () => {
     })
     .catch(err => console.log(err))
 };
+
+export const getMaterial = (id: number) => {
+  return axios.get(`${BACKEND_URL}/api/v1/material/${id}/`)
+    .then((response): MaterialModel => {
+      return response.data;
+    })
+    .catch(err => console.log(err))
+};

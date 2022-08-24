@@ -105,7 +105,7 @@ def insert_rows(
                 item["data"]["name"],
                 item["data"]["units"],
                 item["data"]["count"],
-                item["data"]["price"],
+                str(item["data"]["price"]),
                 item["data"]["total"],
             )
         elif item["type"] == "subtitle":
