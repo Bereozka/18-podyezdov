@@ -2,9 +2,13 @@ from docx import Document
 from docx.shared import Pt
 from docx.text.paragraph import Paragraph
 
+import os
+
 from typing import Union
 from typing_extensions import Literal
 
+# locale imports
+from django.conf import settings
 
 def create_word_file(
     work_data,

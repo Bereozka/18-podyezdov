@@ -10,6 +10,8 @@ from django.conf import settings
 
 import os
 
+import os
+
 import json
 
 # locale imports
@@ -30,6 +32,8 @@ from .services import (
     create_excel_file,
     add_total_types,
 )
+
+from django.conf import settings
 
 
 class ListCreateWorkModelAPIView(ListCreateAPIView):
@@ -113,3 +117,4 @@ def get_excel_file(request):
         )
         file = open("files/finish.xlsx", "rb")
         return FileResponse(file)
+
